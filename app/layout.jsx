@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased min-h-screen`} >
+      <body className={`${inter.className} min-h-screen`} >
         <main className="container mx-auto py-8 px-4">
         {children}
         </main>
