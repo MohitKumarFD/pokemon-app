@@ -17,7 +17,6 @@ export default function Breadcrumbs() {
         // Create a path for the current breadcrumb item
         const href = `/${pathSegments.slice(0, index + 1).join('/')}`;
         
-        // Format the segment (capitalize first letter)
         const formattedSegment = segment.charAt(0).toUpperCase() + segment.slice(1);
         
         return (

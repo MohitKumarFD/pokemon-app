@@ -3,9 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
-// Generate metadata for the page
+
 export async function generateMetadata({ params }) {
-  const pokemon = await fetchPokemonByName(params.name);
+  const { name } = await params;
+  const pokemon = await fetchPokemonByName(name);
   
   if (!pokemon) {
     return {
@@ -20,7 +21,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function PokemonDetailPage({ params }) {
-  const pokemon = await fetchPokemonByName(params.name);
+  const { name } = await params;
+  const pokemon = await fetchPokemonByName(name);
 
   const printArray = (arr) => {
     const newArray = arr;

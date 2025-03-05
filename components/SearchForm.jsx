@@ -25,7 +25,7 @@ export default function SearchForm({ types, onTypeChange, onSearchChange, select
             id="pokemonType"
             value={selectedType}
             onChange={handleTypeSelect}
-            className="w-full p-2 border bg-white border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            className="w-full p-2 border bg-white border-gray-300 rounded-md shadow-sm focus:ring-[#004368] focus:border-[#004368]"
           >
             <option value="">Select</option>
             {types.map((type) => (
